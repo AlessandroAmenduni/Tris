@@ -1,0 +1,62 @@
+:root {
+    --cell-length: 120px;
+    --cell-gutter: 20px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: blue;
+}
+
+.container{
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    flex-direction: row;   
+}
+
+.cell{
+    height: var(--cell-length);
+    width: var(--cell-length);
+    border: 4px solid #ffffff;
+  
+    cursor: pointer;
+  
+    font-size: 60px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.game{
+    width: calc((var(--cell-length) + var(--cell-gutter)) * 3);
+    height: calc((var(--cell-length) + var(--cell-gutter)) * 3);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  
+    align-content: space-between;
+    justify-content: space-between;
+
+    margin-right: 20px;
+}
+
+.text{
+    width: 240px;
+}
+
+h1{
+    color: #ffffff;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+p{
+    color: #ffffff;
+    font-size: 20px;
+}
